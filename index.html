@@ -12,19 +12,19 @@
         <ul>
          <li>
            <label for="name">User Name:</label>
-           <input type="text" id="name" name="user_name">
+           <input type="text" id="name" name="user_name" required>
          </li>
          <li>
            <label for="mail">email:</label>
-           <input type="email" id="mail" name="user_email">
+           <input type="email" id="mail" name="user_email" required>
          </li>
          <li>
            <label for="pass">Password:</label>
-           <input id="pass" name="user_password"></input>
+           <input id="pass" name="user_password" minlength="6" required></input>
          </li>
          <li>
             <label for="birth">Birthdate:</label>
-            <input id="birth" name="user_birthdate"></input>
+            <input type="date" id="birth" name="user_birthdate"required></input>
           </li>
          <li class="button">
             <button type="submit">Register</button>
