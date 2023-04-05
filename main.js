@@ -4,7 +4,7 @@ const path = require('path')
 let ventana;
 
 function createWindow(){
-    const ventana = new BrowserWindow({
+    ventana = new BrowserWindow({
         width: 500,
         height: 300,
         webPreferences:{
