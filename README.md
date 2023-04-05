@@ -18,3 +18,6 @@ Los campos mínimos que ha de tener el formulario son:
     - Contraseña.
     - Fecha de Nacimiento.
 
+Puede colocar otros que considere necesarios.
+
+Coloque todas las validaciones que considere necesarias, por ejemplo que el correo sea válido, que la fecha de nacimiento no sea una fecha en el futuro, o si se tiene una edad mínima que esta sea correcta.
