@@ -21,3 +21,11 @@ Los campos mínimos que ha de tener el formulario son:
 Puede colocar otros que considere necesarios.
 
 Coloque todas las validaciones que considere necesarias, por ejemplo que el correo sea válido, que la fecha de nacimiento no sea una fecha en el futuro, o si se tiene una edad mínima que esta sea correcta.
+
+### Tarea extra 2
+
+Cree un arreglo que tenga varios usuarios “ya utilizados”, estos usuarios no estarán disponibles para el registro.
+
+Ahora, a la hora de elegir un usuario, coloque una validación que compruebe que no se encuentre el usuario dentro de la lista de usuarios.
+
+El evento se ha de validar en el proceso main, y luego enviar una respuesta a la página de creación de usuario, para simular el proceso en el cual se tiene que verificar en un servidor que los usuarios si están disponibles.
