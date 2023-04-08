@@ -27,10 +27,10 @@ function createWindow2(){
 
 ipcMain.on('registroValido', function(event,args){
     console.log(args)
-    let usuario = args
+    let usuario = args.toString()
     createWindow2()
     ventana2.webContents.on('did-finish-load',function(){
-        ventana2.webContents.send('inicioCorrecto','Bienvenido')
+        ventana2.webContents.send('inicioCorrecto','Bienvenido ' + usuario)
     })
 })
     
