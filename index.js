@@ -51,3 +51,7 @@ registro.addEventListener('click',function(evento){
     }   
     
 })
+
+window.comunicacion.usuarioReservado(function(event,args){
+    alert(args)
+})
