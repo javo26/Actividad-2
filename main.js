@@ -27,11 +27,16 @@ function createWindow2(){
 
 ipcMain.on('registroValido', function(event,args){
     console.log(args)
+    let usuariosReservados = ['javo26','javier.marroquin','jmarroquin', 'javierm','marroquin.javier','mjavier']
     let usuario = args.toString()
-    createWindow2()
-    ventana2.webContents.on('did-finish-load',function(){
+    if(usuariosReservados.includes(usuario)){
+        ventana.webContents.send('usuarioReservado','Nombre de Usuario en uso ')
+    }else{
+        createWindow2()
+        ventana2.webContents.on('did-finish-load',function(){
         ventana2.webContents.send('inicioCorrecto','Bienvenido ' + usuario)
-    })
+        })
+    }
 })
     
 
